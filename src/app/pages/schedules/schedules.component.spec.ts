@@ -23,3 +23,5 @@ describe('SchedulesComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+export { SchedulesComponent };
