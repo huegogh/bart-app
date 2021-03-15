@@ -7,14 +7,15 @@ import { HomeComponent } from './pages/home/home.component';
 import { SchedulesComponent } from './pages/schedules/schedules.component';
 import { DeparturesComponent } from './pages/departures/departures.component';
 import { TripPlannerComponent } from './pages/trip-planner/trip-planner.component';
-
+import { ButtonComponent } from './components/universal/button/button.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     SchedulesComponent,
     DeparturesComponent,
-    TripPlannerComponent
+    TripPlannerComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
