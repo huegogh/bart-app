@@ -1,1 +1,58 @@
-<p>schedules works!</p>
+<div class="container">
+    <p>schedules works! header goes here</p>
+    <app-button buttonText="Schedules" disabled></app-button>
+
+    <p>Station dropdown 1 - date picker - time picker - "Get Schedule Button"</p>
+    <app-button buttonText="Get Schedule"></app-button>
+
+
+    <p>Station Schedule Results for [[station name]]</p>
+    <b>Get another schedule</b>
+
+    <div class="row">
+        <div class="col">
+            <strong>[[Direction of Platform]]</strong>
+            <table class="table">
+                <tbody>
+                    <!-- use ngFor directive for the data coming in, limit to 11 entries. pull from DataService/APICall -->
+                    <tr>
+                        <td scope="row">07:31PM</td>
+                        <td>Richmond</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">07:31PM</td>
+                        <td>Richmond</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">07:31PM</td>
+                        <td>Richmond</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col">
+            <strong>[[Direction of Platform]]</strong>
+            <table class="table">
+                <tbody>
+                    <!-- use ngFor directive for the data coming in, limit to 11 entries. pull from DataService/APICall -->
+                    <tr>
+                        <td scope="row">07:31PM</td>
+                        <td>Richmond</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">07:31PM</td>
+                        <td>Richmond</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">07:31PM</td>
+                        <td>Richmond</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <p>Southbound Platform 2</p>
+    table with southbound info here
+
+    <app-button buttonText="dksjhfdjksf"></app-button>
+</div>
