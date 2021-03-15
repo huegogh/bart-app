@@ -8,6 +8,7 @@ import { SchedulesComponent } from './pages/schedules/schedules.component';
 import { DeparturesComponent } from './pages/departures/departures.component';
 import { TripPlannerComponent } from './pages/trip-planner/trip-planner.component';
 import { ButtonComponent } from './components/universal/button/button.component';
+import { DropdownComponent } from './components/universal/dropdown/dropdown.component'
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './components/universal/header/header.component';
 @NgModule({

@@ -7,7 +7,7 @@ import { DropdownComponent } from '../../components/universal/dropdown/dropdown.
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  currentMessage = 'Hello';
   constructor() { }
 
   ngOnInit(): void {
