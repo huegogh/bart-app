@@ -1,0 +1,10 @@
+.navBG{
+    background-color: #0064A8;
+}
+img{
+    height: 114px;
+}
+.headerTitle{
+    display: flex;
+    justify-content: center;
+}
