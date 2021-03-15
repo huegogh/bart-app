@@ -13,7 +13,7 @@ export interface IAdvisory {
         bsa: [{
             station: string,
             description: {
-                data: string
+                "#cdata-section": string
             },
             sms: {
                 data: string

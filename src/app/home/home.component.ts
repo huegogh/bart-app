@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
   GetBartData(): void{
     this.bartService.GetData().subscribe({
       next: data => {
-        this.message = data.root.bsa[0].description.data;
+        this.message = data.root.bsa[0].description["#cdata-section"];
         console.log(this.message);
       }
     })
