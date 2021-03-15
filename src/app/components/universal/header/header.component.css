@@ -1,0 +1,21 @@
+.navBG{
+    background-color: #0064A8;
+}
+img{
+    height: 114px;
+}
+.headerTitle{
+    display: flex;
+    justify-content: center;
+}
+.title{
+    margin-right: 80px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.seasonThree{
+    margin-top: 60px;
+    font-size: 30px;
+    color: #FFFFFF;
+}

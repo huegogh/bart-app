@@ -9,6 +9,7 @@ import { DeparturesComponent } from './pages/departures/departures.component';
 import { TripPlannerComponent } from './pages/trip-planner/trip-planner.component';
 import { ButtonComponent } from './components/universal/button/button.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HeaderComponent } from './components/universal/header/header.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     DeparturesComponent,
     TripPlannerComponent,
     ButtonComponent,
-    DropdownComponent
+    DropdownComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
