@@ -1,14 +1,29 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <h1 class="text-center">{{ message }}</h1>
+      <h1 class="text-center">Current Advisory: {{ message }}</h1>
     </div>
   </div>
   <div class="row">
     <div class="col">
       <button type="button"
-      class="btn btn-info"
-      (click)="GetBartData()">Get Data</button>
+              class="btn btn-info"
+              (click)="GetAdvisory()">Get Advisory</button>
+    </div>
+    <div class="col">
+      <button type="button"
+              class="btn btn-info"
+              (click)="GetStations()">Get Stations</button>
+    </div>
+  </div>
+  <div *ngIf="StationsList.length" class="row">
+    <div class="col-12">
+      <h1>List of Stations</h1>
+    </div>
+    <div class="col-12">
+      <ul>
+        <li *ngFor="let station of StationsList">{{station.name}}</li>
+      </ul>
     </div>
   </div>
 </div>
