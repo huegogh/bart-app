@@ -3,9 +3,9 @@ import { ILeg } from "./leg";
 
 export interface ITrip {
     '@origin': string,
+    '@destination': string,
     '@fare': string,
     '@origTimeMin': string,
-    '@destination': string,
     '@origTimeDate': string,
     '@destTimeMin': string,
     '@destTimeDate': string,
