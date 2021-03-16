@@ -46,3 +46,12 @@ img{
     background-color: #B73EB7;
     opacity: 70%;
 }
+#background{
+    height: 100%;
+    background-image: url("./SideshowBob.png");
+    background-size: cover;  
+    background-size: 100%;
+}
+.noPad{
+    padding: 0%;
+}
