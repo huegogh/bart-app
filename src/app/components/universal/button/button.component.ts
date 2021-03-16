@@ -7,8 +7,6 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
 
-  
-
   @Input() buttonText: string = ""
 
   constructor() { }
@@ -20,7 +18,5 @@ export class ButtonComponent implements OnInit {
   buttonClick(value: string){
     console.log(value)
   }
-
-
 
 }

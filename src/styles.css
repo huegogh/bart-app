@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+
+.blue {
+    background-color: #0064A8!important;
+}
+
+.blueText {
+    color: #0064A8!important;
+}
+
+.redText {
+    color: #FF0000
+}
+
+table, th, td {
+    border: none;
+}
+
+td {
+    padding: 0px!important;
+}
+
+hr {
+    border-top: solid black 1px;
+    padding: 0px!important;
+    margin: 0px!important;
+}

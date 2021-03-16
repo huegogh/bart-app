@@ -1,21 +1,13 @@
-.navBG{
-    background-color: #0064A8;
+table {
+    background-color: #B73EB736;
+    /* width: 70% */
 }
-img{
-    height: 114px;
+
+td {
+    padding: 20px!important
 }
-.headerTitle{
-    display: flex;
-    justify-content: center;
-}
-.title{
-    margin-right: 80px;
-    font-size: 50px;
-    font-weight: bold;
-    color: #FFFFFF;
-}
-.seasonThree{
-    margin-top: 60px;
-    font-size: 30px;
-    color: #FFFFFF;
+
+th {
+    background-color: #B73EB7;
+    color: white
 }
