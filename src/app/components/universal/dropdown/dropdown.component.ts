@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class DropdownComponent implements OnInit {
   @Input() initialText = 'This is not working!';
+  @Input() popArray:string[] = [''];
 
   constructor() { }
 

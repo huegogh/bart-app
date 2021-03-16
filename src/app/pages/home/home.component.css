@@ -19,3 +19,30 @@ img{
     font-size: 30px;
     color: #FFFFFF;
 }
+.cardMargin{
+    margin-top: 150px;
+}
+.cardOneTop{
+    background-color: #50B820;
+}
+.cardOneBottom{
+    background-color: #50B820;
+    opacity: 70%;
+}
+.cardSize{
+    height: 200px;
+}
+.cardTwoTop{
+    background-color: #00A1FF;
+}
+.cardTwoBottom{
+    background-color: #00A1FF;
+    opacity: 70%;
+}
+.cardThreeTop{
+    background-color: #B73EB7;
+}
+.cardThreeBottom{
+    background-color: #B73EB7;
+    opacity: 70%;
+}
