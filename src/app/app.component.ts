@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faMapMarker} from '@fortawesome/free-solid-svg-icons'
+
 
 @Component({
   selector: 'app-root',
@@ -8,5 +8,5 @@ import { faMapMarker} from '@fortawesome/free-solid-svg-icons'
 })
 export class AppComponent {
   title = 'bart-app';
-  faMapMarker = faMapMarker;
+  
 }

@@ -10,7 +10,7 @@ import { TripPlannerComponent } from './pages/trip-planner/trip-planner.componen
 import { ButtonComponent } from './components/universal/button/button.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './components/universal/header/header.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 @NgModule({
   declarations: [
@@ -26,8 +26,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
-    FontAwesomeModule
+    NgbModule
+    
 
   ],
   providers: [],
