@@ -30,4 +30,10 @@ img{
 }
 .btn{
     min-width: 100%;
+    font-size: 30px;
+    background-color: rgb(0, 100, 168);
+}
+
+.abSize{
+    font-size: 30px;
 }
