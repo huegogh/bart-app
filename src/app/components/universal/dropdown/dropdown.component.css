@@ -7,3 +7,12 @@
     -webkit-appearance: none;
 
 }
+
+.optionStyle{
+    font-size: 30px;
+    min-width: 100%;
+}
+
+.container{
+    min-width: 100%;
+}

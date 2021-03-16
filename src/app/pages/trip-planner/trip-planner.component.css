@@ -8,14 +8,26 @@ img{
     display: flex;
     justify-content: center;
 }
+.mainContainer{
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 65px;
+}
 .title{
     margin-right: 80px;
-    font-size: 50px;
+    margin-top: 10px;
+    font-size: 30px;
     font-weight: bold;
     color: #FFFFFF;
+}
+.titleBG{
+    background-color: rgb(66, 140, 33);
 }
 .seasonThree{
     margin-top: 60px;
     font-size: 30px;
     color: #FFFFFF;
+}
+.btn{
+    min-width: 100%;
 }
