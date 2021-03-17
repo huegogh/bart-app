@@ -10,6 +10,9 @@ import { TripPlannerComponent } from './pages/trip-planner/trip-planner.componen
 import { ButtonComponent } from './components/universal/button/button.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './components/universal/header/header.component';
+import { NavigationComponent } from './components/universal/navigation/navigation.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,12 +22,15 @@ import { HeaderComponent } from './components/universal/header/header.component'
     TripPlannerComponent,
     ButtonComponent,
     DropdownComponent,
-    HeaderComponent
+    HeaderComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

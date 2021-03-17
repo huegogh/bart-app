@@ -1,17 +1,32 @@
 <app-header></app-header>
 <div class="container">
-    <app-button buttonText="Schedules" disabled></app-button>
-
-    <p>Station dropdown 1 - date picker - time picker - "Get Schedule Button"</p>
-    <app-button buttonText="Get Schedule"></app-button>
-
-
-    <p>Station Schedule Results for [[station name]]</p>
-    <b>Get another schedule</b>
+    <h3 class="mt-5 mb-4">Schedules By Station Results</h3>
 
     <div class="row">
+        <div class="col-2 headerTitle">
+            <app-dropdown></app-dropdown>
+        </div>
+        <div class="col-2">
+            <div class="mb-3">
+                <!-- <label for="exampleInputEmail1" class="form-label sr-only">Date</label> -->
+                <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text"></div>
+            </div>
+        </div>
+        <div class="col-2 headerTitle">
+            <app-dropdown></app-dropdown>
+        </div>
+        <div class="col-2">
+            <app-button buttonText="Get Schedule"></app-button>
+        </div>
+    </div>
+
+    <h4 class="blueText mt-4">Station Schedule Results for [[station name]]</h4>
+    <b class="blueText">Get another schedule</b>
+
+    <div class="row mt-4">
         <div class="col">
-            <strong>[[Direction of Platform]]</strong>
+            <strong>[[Northbound Platform]]</strong>
             <table class="table">
                 <tbody>
                     <!-- use ngFor directive for the data coming in, limit to 11 entries. pull from DataService/APICall -->
@@ -31,7 +46,7 @@
             </table>
         </div>
         <div class="col">
-            <strong>[[Direction of Platform]]</strong>
+            <strong>[[Southbound Platform]]</strong>
             <table class="table">
                 <tbody>
                     <!-- use ngFor directive for the data coming in, limit to 11 entries. pull from DataService/APICall -->
@@ -51,8 +66,4 @@
             </table>
         </div>
     </div>
-    <p>Southbound Platform 2</p>
-    table with southbound info here
-
-    <app-button buttonText="dksjhfdjksf"></app-button>
 </div>
