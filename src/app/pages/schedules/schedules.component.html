@@ -17,14 +17,14 @@
             <app-dropdown></app-dropdown>
         </div>
         <div class="col-2">
-            <app-button buttonText="Get Schedule"></app-button>
+            <app-button (click)="toggle = !toggle" buttonText="Get Schedule"></app-button>
         </div>
     </div>
 
-    <h4 class="blueText mt-4">Station Schedule Results for [[station name]]</h4>
-    <b class="blueText">Get another schedule</b>
+    <h4 *ngIf="toggle" class="blueText mt-4">Station Schedule Results for [[station name]]</h4>
+    <b *ngIf="toggle" class="blueText">Get another schedule</b>
 
-    <div class="row mt-4">
+    <div class="row mt-4" *ngIf="toggle">
         <div class="col">
             <strong>[[Northbound Platform]]</strong>
             <table class="table">

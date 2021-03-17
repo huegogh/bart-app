@@ -7,12 +7,13 @@
             <app-dropdown></app-dropdown>
         </div>
         <div class="col">
-            <app-button buttonText="Select"></app-button>
+            <app-button (click)="toggle = !toggle" buttonText="Select"></app-button>
         </div>
     </div>
 
+
     <table class="table pt-5">
-        <tbody>
+        <tbody *ngIf="toggle">
             <!-- use combo structural directive to display the contents of the table based on data being called in -->
             <th>
                 <div class="row">
@@ -61,7 +62,7 @@
             </tr>
         </tbody>
     </table>
-    <div class="d-flex justify-content-end">
+    <div *ngIf="toggle" class="d-flex justify-content-end">
         <p>[train icon] = 3 door train <del class="redText">Cancelled Trip</del></p>
     </div>
 </div>
