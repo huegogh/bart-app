@@ -6,6 +6,11 @@ img {
     height: 114px;
 }
 
+.card {
+    background-color: transparent;
+    width: 403px!important
+}
+
 .headerTitle {
     display: flex;
     justify-content: center;
@@ -25,7 +30,7 @@ img {
 }
 
 .cardMargin {
-    margin-top: 150px;
+    padding-top: 150px;
 }
 
 .cardOneTop {
@@ -34,8 +39,7 @@ img {
 }
 
 .cardOneBottom {
-    background-color: #50B820;
-    opacity: 70%;
+    background-color: #B6E2A2BF;
     cursor: pointer;
 }
 
@@ -49,8 +53,7 @@ img {
 }
 
 .cardTwoBottom {
-    background-color: #00A1FF;
-    opacity: 70%;
+    background-color: #4394b1b6;
     cursor: pointer;
 }
 
@@ -60,20 +63,23 @@ img {
 }
 
 .cardThreeBottom {
-    background-color: #B73EB7;
-    opacity: 70%;
+    background-color: #E094E5C4;
     cursor: pointer;
 }
 
 #background {
-    height: 100%;
+    height: 100%!important;
     background-image: url("./SideshowBob.png");
     background-size: cover;
-    background-size: 100%;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .noPad {
     padding: 0%;
     height: 100%;
+}
+
+.removeBorder {
+    border: none;
 }
