@@ -10,8 +10,6 @@ img{
     justify-content: center;
 }
 .mainContainer{
-    margin-right: 100px;
-    margin-left: 100px;
     margin-top: 65px;
 }
 .title{
@@ -37,4 +35,24 @@ img{
 
 .abSize{
     font-size: 30px;
+}
+
+.font30{
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.font26{
+    font-size: 26px;
+}
+.tableBG{
+    background-color: #428C2136;
+    border-style: solid;
+    border-color: #707070;
+    border-width: 1px;
+}
+.vl{
+    max-width:20px;
+    border-left: 1px solid gray;
+    height: 40px;
 }
