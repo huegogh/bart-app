@@ -23,3 +23,5 @@ describe('DropdownComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+export {DropdownComponent};

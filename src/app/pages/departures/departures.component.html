@@ -1,1 +1,67 @@
-<p>departures works!</p>
+<app-header></app-header>
+
+<div class="container">
+    <h3 class="mt-5">Select station to get upcoming departures:</h3>
+    <div class="row mb-5">
+        <div class="col">
+            <app-dropdown></app-dropdown>
+        </div>
+        <div class="col">
+            <app-button buttonText="Select"></app-button>
+        </div>
+    </div>
+
+    <table class="table pt-5">
+        <tbody>
+            <!-- use combo structural directive to display the contents of the table based on data being called in -->
+            <th>
+                <div class="row">
+                    <div class="col">[star icon] 12th St. Oakland City Center</div>
+                    <div class="col">1:19am</div>
+                </div>
+            </th>
+            <tr>
+                Sort by: Name | Platform
+            </tr>
+            <tr>
+                <div class="px-3">Platform 1</div>
+                <div class="row p-1 m-1">
+                    <div class="row">
+                        <div class="col">Berryessa
+                        </div>
+                        <div class="col">10 min (10 car [train icon]) 29 min (8 car )
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col">Dublin/ Pleasanton
+                        </div>
+                        <div class="col">10 min (10 car [train icon][train icon]) 29 min (10 car )
+                        </div>
+                    </div>
+                </div>
+            </tr>
+            <tr>
+                <div class="px-3">Platform 1</div>
+                <div class="row p-1 m-1">
+                    <div class="row">
+                        <div class="col">Berryessa
+                        </div>
+                        <div class="col">10 min (10 car [train icon]) 29 min (8 car )
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col">Dublin/ Pleasanton
+                        </div>
+                        <div class="col">10 min (10 car [train icon][train icon]) 29 min (10 car )
+                        </div>
+                    </div>
+                </div>
+            </tr>
+        </tbody>
+    </table>
+    <div class="d-flex justify-content-end">
+        <p>[train icon] = 3 door train <del class="redText">Cancelled Trip</del></p>
+    </div>
+</div>

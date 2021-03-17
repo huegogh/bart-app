@@ -1,0 +1,19 @@
+.custom-select {
+    max-width: 150px;
+    border-color: rgb(161, 161, 161);
+}
+.custom-select select {
+
+    -webkit-appearance: none;
+
+}
+
+.optionStyle{
+    font-size: 30px;
+    min-width: 100%;
+}
+
+.container{
+    min-width: 100%;
+    padding:0;
+}
