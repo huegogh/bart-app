@@ -11,6 +11,8 @@ import { ButtonComponent } from './components/universal/button/button.component'
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './components/universal/header/header.component';
 import { ModalComponent } from './components/universal/modal/modal.component';
+import { NavigationComponent } from './components/universal/navigation/navigation.component';
+
 
 
 @NgModule({
@@ -23,7 +25,8 @@ import { ModalComponent } from './components/universal/modal/modal.component';
     ButtonComponent,
     DropdownComponent,
     HeaderComponent,
-    ModalComponent
+    ModalComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
