@@ -1,12 +1,12 @@
 <app-header></app-header>
-<div class="container-fluid d-flex">
-    <div class="row">
-        <div class="col-8 ms-5">
+
+<div class="container">
+<div class="row">
+        <div class="col">
             <h3 class="mt-5">Select station to get upcoming departures:</h3>
             <div class="row mb-5">
                 <div class="col">
                     <app-dropdown></app-dropdown>
-
                 </div>
                 <div class="col">
                     <app-button (click)="toggle = !toggle" buttonText="Select"></app-button>
@@ -18,59 +18,55 @@
                     <!-- use combo structural directive to display the contents of the table based on data being called in -->
                     <th>
                         <div class="row">
-                            <div class="col">[star icon] 12th St. Oakland City Center</div>
-                            <div class="col">1:19am</div>
+                            <div class="col"><i class="fas fa-star"></i>[[12th St. Oakland City Center]]</div>
+                            <div class="col rightAlign">[[1:19am]]</div>
                         </div>
                     </th>
-                    <tr>
-                        Sort by: Name | Platform
-                    </tr>
-                    <tr>
-                        <div class="px-3">Platform 1</div>
-                        <div class="row p-1 m-1">
-                            <div class="row">
-                                <div class="col">Berryessa
-                                </div>
-                                <div class="col">10 min (10 car <i class="fas fa-train"></i>) 29 min (8 car )
-                                </div>
+        
+                    <!-- platform block, ngFor for each platform entry -->
+                    <!-- need to have conditional styling here:
+                                IF first in table, top border is not thicc, else top border is thick -->
+                    <tr class="thiccTop">
+                        <div class="row">
+                            <div class="col">
+                                <h5 class="mt-4"><b>[[Platform 1]]</b></h5>
                             </div>
-                            <hr>
-                            <div class="row">
-                                <div class="col">Dublin/ Pleasanton
-                                </div>
-                                <div class="col">10 min (10 car <i class="fas fa-train"></i>) 29 min (10 car )
-                                </div>
+                            <div class="col">
+                                <h5 class="mt-4 rightAlign"><b>Arriving In:</b></h5>
                             </div>
                         </div>
                     </tr>
                     <tr>
-                        <div class="px-3">Platform 1</div>
-                        <div class="row p-1 m-1">
-                            <div class="row">
-                                <div class="col">Berryessa
-                                </div>
-                                <div class="col">10 min (10 car <i class="fas fa-train"></i>) 29 min (8 car )
-                                </div>
+                        <div class="row">
+                            <div class="col">[[Berryessa]]
                             </div>
-                            <hr>
-                            <div class="row">
-                                <div class="col">Dublin/ Pleasanton
-                                </div>
-                                <div class="col">10 min (10 car <i class="fas fa-train"></i>) 29 min (10 car )
-                                </div>
+                            <div class="col rightAlign">[[10 min (10 car <i class="fas fa-train"></i>) 29 min (8 car)]]
                             </div>
                         </div>
                     </tr>
+                    <tr>
+                        <!-- BACKEND: ALSO NOTE THAT there is extra padding on the last entry of the platform -->
+                        <div class="row mb-5">
+                            <div class="col">[[Dublin/ Pleasanton]]
+                            </div>
+                            <div class="col rightAlign">[[10 min (10 car <i class="fas fa-train"></i>) 29 min (10 car)]]
+                            </div>
+                        </div>
+                    </tr>
+        
+        
+        
                 </tbody>
             </table>
             <div *ngIf="toggle" class="d-flex justify-content-end">
                 <p><i class="fas fa-train"></i> = 3 door train <del class="redText">Cancelled Trip</del></p>
             </div>
         </div>
-
-        <div class="col-3 ">
+        
+        <div class="col-4">
             <app-navigation></app-navigation>
         </div>
-
-    </div>
 </div>
+
+</div>
+
