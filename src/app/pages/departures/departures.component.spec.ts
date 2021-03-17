@@ -23,3 +23,5 @@ describe('DeparturesComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+export { DeparturesComponent };

@@ -1,1 +1,69 @@
-<p>schedules works!</p>
+<app-header></app-header>
+<div class="container">
+    <h3 class="mt-5 mb-4">Schedules By Station Results</h3>
+
+    <div class="row">
+        <div class="col-2 headerTitle">
+            <app-dropdown></app-dropdown>
+        </div>
+        <div class="col-2">
+            <div class="mb-3">
+                <!-- <label for="exampleInputEmail1" class="form-label sr-only">Date</label> -->
+                <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text"></div>
+            </div>
+        </div>
+        <div class="col-2 headerTitle">
+            <app-dropdown></app-dropdown>
+        </div>
+        <div class="col-2">
+            <app-button (click)="toggle = !toggle" buttonText="Get Schedule"></app-button>
+        </div>
+    </div>
+
+    <h4 *ngIf="toggle" class="blueText mt-4">Station Schedule Results for [[station name]]</h4>
+    <b *ngIf="toggle" class="blueText">Get another schedule</b>
+
+    <div class="row mt-4" *ngIf="toggle">
+        <div class="col">
+            <strong>[[Northbound Platform]]</strong>
+            <table class="table">
+                <tbody>
+                    <!-- use ngFor directive for the data coming in, limit to 11 entries. pull from DataService/APICall -->
+                    <tr>
+                        <td scope="row">07:31PM</td>
+                        <td>Richmond</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">07:31PM</td>
+                        <td>Richmond</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">07:31PM</td>
+                        <td>Richmond</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col">
+            <strong>[[Southbound Platform]]</strong>
+            <table class="table">
+                <tbody>
+                    <!-- use ngFor directive for the data coming in, limit to 11 entries. pull from DataService/APICall -->
+                    <tr>
+                        <td scope="row">07:31PM</td>
+                        <td>Richmond</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">07:31PM</td>
+                        <td>Richmond</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">07:31PM</td>
+                        <td>Richmond</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

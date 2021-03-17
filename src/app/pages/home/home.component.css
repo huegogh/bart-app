@@ -1,0 +1,79 @@
+.navBG {
+    background-color: #0064A8;
+}
+
+img {
+    height: 114px;
+}
+
+.headerTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    margin-right: 80px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.seasonThree {
+    margin-top: 60px;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.cardMargin {
+    margin-top: 150px;
+}
+
+.cardOneTop {
+    background-color: #50B820;
+    cursor: pointer;
+}
+
+.cardOneBottom {
+    background-color: #50B820;
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.cardSize {
+    height: 200px;
+}
+
+.cardTwoTop {
+    background-color: #00A1FF;
+    cursor: pointer;
+}
+
+.cardTwoBottom {
+    background-color: #00A1FF;
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.cardThreeTop {
+    background-color: #B73EB7;
+    cursor: pointer;
+}
+
+.cardThreeBottom {
+    background-color: #B73EB7;
+    opacity: 70%;
+    cursor: pointer;
+}
+
+#background {
+    height: 100%;
+    background-image: url("./SideshowBob.png");
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.noPad {
+    padding: 0%;
+    height: 100%;
+}

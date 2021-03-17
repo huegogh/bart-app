@@ -23,3 +23,5 @@ describe('TripPlannerComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+export { TripPlannerComponent };
