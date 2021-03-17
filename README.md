@@ -7,6 +7,7 @@ Using the ( https://www.bart.gov/ "Bart Website")  as a reference, we must pull 
 # Here's a quick prototype of what we have ↓↓
 https://xd.adobe.com/view/0e88e8ff-aeef-41bd-9954-25fb521c0528-5bdb/
 
-![Screenshot (320)](https://user-images.githubusercontent.com/61571099/111204800-b2171800-8583-11eb-950b-5f180b358547.png)
+![Screenshot (322)](https://user-images.githubusercontent.com/61571099/111510188-c5a0bb00-870a-11eb-9f7c-4437262c52ca.png)
+
 
 
