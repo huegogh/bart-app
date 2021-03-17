@@ -37,3 +37,18 @@ img{
 .abSize{
     font-size: 30px;
 }
+
+.font30{
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.font26{
+    font-size: 26px;
+}
+.tableBG{
+    background-color: #428C2136;
+    border-style: solid;
+    border-color: #707070;
+    border-width: 1px;
+}
