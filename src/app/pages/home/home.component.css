@@ -35,10 +35,12 @@ img {
 
 .cardOneTop {
     background-color: #50B820;
+    cursor: pointer;
 }
 
 .cardOneBottom {
     background-color: #B6E2A2BF;
+    cursor: pointer;
 }
 
 .cardSize {
@@ -47,18 +49,22 @@ img {
 
 .cardTwoTop {
     background-color: #00A1FF;
+    cursor: pointer;
 }
 
 .cardTwoBottom {
     background-color: #4394b1b6;
+    cursor: pointer;
 }
 
 .cardThreeTop {
     background-color: #B73EB7;
+    cursor: pointer;
 }
 
 .cardThreeBottom {
     background-color: #E094E5C4;
+    cursor: pointer;
 }
 
 #background {
