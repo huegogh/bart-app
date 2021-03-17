@@ -71,3 +71,6 @@ img {
     padding: 0%;
     height: 100%;
 }
+.removeBorder{
+    border: none;
+}
