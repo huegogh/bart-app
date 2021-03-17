@@ -20,10 +20,10 @@
                         <app-dropdown></app-dropdown>
                     </div>
                     <div class="col-12 px-0 mt-4">
-                        <button type="button" class="btn btn-primary">Search</button>
+                        <button (click)="toggle = !toggle" type="button" class="btn btn-primary">Search</button>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" *ngIf="toggle">
                     <div class="col-12 mt-5 titleBG">
                         <p class = "font30 my-3">Sun, 3/14/2021</p>
                     </div>
