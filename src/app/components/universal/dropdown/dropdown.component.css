@@ -1,6 +1,7 @@
 .custom-select {
     max-width: 150px;
     border-color: rgb(161, 161, 161);
+    cursor: pointer;
 }
 .custom-select select {
 
