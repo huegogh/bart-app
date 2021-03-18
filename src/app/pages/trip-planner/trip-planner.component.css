@@ -3,7 +3,6 @@
 }
 img{
     height: 114px;
-   
 }
 .headerTitle{
     display: flex;
@@ -55,4 +54,24 @@ img{
     max-width:20px;
     border-left: 1px solid gray;
     height: 40px;
+}
+.custom-select {
+    max-width: 150px;
+    border-color: rgb(161, 161, 161);
+    cursor: pointer;
+}
+.custom-select select {
+
+    -webkit-appearance: none;
+
+}
+
+.optionStyle{
+    font-size: 30px;
+    min-width: 100%;
+}
+
+.container{
+    min-width: 100%;
+    padding:0;
 }

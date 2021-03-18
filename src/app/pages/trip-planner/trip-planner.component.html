@@ -11,13 +11,21 @@
                         <p class="abSize mt-3 mb-0">A</p>
                     </div>
                     <div class="col-11 mt-3 pe-0">
-                        <app-dropdown></app-dropdown>
+                        <div class="container">
+                            <select class=" rounded-0 custom-select optionStyle py-2" id="inputGroupSelect01">
+                                <option class="" *ngFor="let item of popArray">{{item}}</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="col-1 ">
                         <p class="abSize mt-3 mb-0">B</p>
                     </div>
                     <div class="col-11 mt-3 pe-0">
-                        <app-dropdown></app-dropdown>
+                        <div class="container">
+                            <select class=" rounded-0 custom-select optionStyle py-2" id="inputGroupSelect01">
+                                <option class="" *ngFor="let item of popArray">{{item}}</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="col-12 px-0 mt-4">
                         <button (click)="toggle = !toggle" type="button" class="btn btn-primary">Search</button>
