@@ -36,6 +36,8 @@ img {
 .cardOneTop {
     background-color: #50B820;
     cursor: pointer;
+    color: white; 
+    padding: 2rem; 
 }
 
 .cardOneBottom {
@@ -44,12 +46,14 @@ img {
 }
 
 .cardSize {
-    height: 200px;
+    height: 300px;
 }
 
 .cardTwoTop {
     background-color: #00A1FF;
     cursor: pointer;
+    color: white;
+    padding: 2rem;
 }
 
 .cardTwoBottom {
@@ -60,6 +64,8 @@ img {
 .cardThreeTop {
     background-color: #B73EB7;
     cursor: pointer;
+    color: white;
+    padding: 1rem;
 }
 
 .cardThreeBottom {
