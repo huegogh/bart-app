@@ -1,7 +1,7 @@
 <app-header></app-header>
 
 <div class="container">
-<div class="row">
+    <div class="row">
         <div class="col">
             <h3 class="mt-5">Select station to get upcoming departures:</h3>
             <div class="row mb-5">
@@ -12,7 +12,7 @@
                     <app-button (click)="toggle = !toggle" buttonText="Select"></app-button>
                 </div>
             </div>
-        
+
             <table class="table pt-5">
                 <tbody *ngIf="toggle">
                     <!-- use combo structural directive to display the contents of the table based on data being called in -->
@@ -22,7 +22,7 @@
                             <div class="col rightAlign">[[1:19am]]</div>
                         </div>
                     </th>
-        
+
                     <!-- platform block, ngFor for each platform entry -->
                     <!-- need to have conditional styling here:
                                 IF first in table, top border is not thicc, else top border is thick -->
@@ -53,20 +53,19 @@
                             </div>
                         </div>
                     </tr>
-        
-        
-        
+
+
+
                 </tbody>
             </table>
             <div *ngIf="toggle" class="d-flex justify-content-end">
                 <p><i class="fas fa-train"></i> = 3 door train <del class="redText">Cancelled Trip</del></p>
             </div>
         </div>
-        
+
         <div class="col-4">
             <app-navigation></app-navigation>
         </div>
-</div>
+    </div>
 
 </div>
-
