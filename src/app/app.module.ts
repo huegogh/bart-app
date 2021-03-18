@@ -14,9 +14,6 @@ import { NavigationComponent } from './components/universal/navigation/navigatio
 import { TimedropdownComponent } from './components/universal/timedropdown/timedropdown.component';
 import { HttpClientModule } from '@angular/common/http';
 
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
