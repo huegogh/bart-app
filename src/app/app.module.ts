@@ -12,6 +12,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './components/universal/header/header.component';
 import { NavigationComponent } from './components/universal/navigation/navigation.component';
 import { TimedropdownComponent } from './components/universal/timedropdown/timedropdown.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 
@@ -31,9 +33,9 @@ import { TimedropdownComponent } from './components/universal/timedropdown/timed
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
-    
-
+    NgbModule,
+    HttpClientModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
