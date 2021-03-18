@@ -1,8 +1,8 @@
 <app-header></app-header>
-<div class="container mainContainer">
-    <div class="row">
-        <div class="col-8">
-            <div class="container">
+<div class="container-fluid mainContainer ">
+    <div class="row d-flex justify-content-between">
+        <div class="col-6">
+            <div class="container ms-5">
                 <div class="row">
                     <div class="col-12 titleBG d-flex align-items-center">
                         <p class="title ms-3">Trip Planner:</p>
@@ -11,13 +11,21 @@
                         <p class="abSize mt-3 mb-0">A</p>
                     </div>
                     <div class="col-11 mt-3 pe-0">
-                        <app-dropdown></app-dropdown>
+                        <div class="container">
+                            <select class=" rounded-0 custom-select optionStyle py-2" id="inputGroupSelect01">
+                                <option class="" *ngFor="let item of popArray">{{item}}</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="col-1 ">
                         <p class="abSize mt-3 mb-0">B</p>
                     </div>
                     <div class="col-11 mt-3 pe-0">
-                        <app-dropdown></app-dropdown>
+                        <div class="container">
+                            <select class=" rounded-0 custom-select optionStyle py-2" id="inputGroupSelect01">
+                                <option class="" *ngFor="let item of popArray">{{item}}</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="col-12 px-0 mt-4">
                         <button type="button" class="btn btn-primary">Search</button>
@@ -44,6 +52,10 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="col-3 ">
+            <app-navigation></app-navigation>
         </div>
     </div>
 </div>

@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./departures.component.css']
 })
 export class DeparturesComponent implements OnInit {
-
+  toggle = false;
+  initialText = 'This is not working!';
+  popArray:string[] = [''];
   constructor() { }
 
   ngOnInit(): void {

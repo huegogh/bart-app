@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./schedules.component.css']
 })
 export class SchedulesComponent implements OnInit {
-
+  toggle = false;
+  initialText = 'This is not working!';
+  popArray:string[] = [''];
   constructor() { }
 
   ngOnInit(): void {
