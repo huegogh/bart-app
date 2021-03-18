@@ -6,8 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./trip-planner.component.css']
 })
 export class TripPlannerComponent implements OnInit {
+
+  toggle = false;
+
   initialText = 'This is not working!';
   popArray:string[] = [''];
+
   constructor() { }
 
   ngOnInit(): void {

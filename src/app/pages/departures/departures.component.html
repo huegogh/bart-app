@@ -1,7 +1,8 @@
 <app-header></app-header>
 
-<div class="container">
-    <div class="row">
+<div class="container-fluid">
+<div class="row">
+
         <div class="col">
             <h3 class="mt-5">Select station to get upcoming departures:</h3>
             <div class="row mb-5">
@@ -15,9 +16,9 @@
                 <div class="col">
                     <app-button (click)="toggle = !toggle" buttonText="Select"></app-button>
                 </div>
-            </div>
+            </div>       
+            <table class="table col-lg-10 pt-5">
 
-            <table class="table pt-5">
                 <tbody *ngIf="toggle">
                     <!-- use combo structural directive to display the contents of the table based on data being called in -->
                     <th>
@@ -62,7 +63,7 @@
 
                 </tbody>
             </table>
-            <div *ngIf="toggle" class="d-flex justify-content-end">
+            <div *ngIf="toggle" class="col-lg-10 d-flex justify-content-end">
                 <p><i class="fas fa-train"></i> = 3 door train <del class="redText">Cancelled Trip</del></p>
             </div>
         </div>

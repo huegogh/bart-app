@@ -8,8 +8,13 @@ img {
 
 .card {
     background-color: transparent;
-    width: 403px!important
+    width: 403px!important;
+    margin: 2.5rem;
+    display: flex;
+    justify-content: center;
 }
+
+
 
 .headerTitle {
     display: flex;
@@ -36,6 +41,8 @@ img {
 .cardOneTop {
     background-color: #50B820;
     cursor: pointer;
+    color: white;
+    padding: 2rem;
 }
 
 .cardOneBottom {
@@ -44,12 +51,14 @@ img {
 }
 
 .cardSize {
-    height: 200px;
+    height: 300px;
 }
 
 .cardTwoTop {
     background-color: #00A1FF;
     cursor: pointer;
+    color: white;
+    padding: 2rem;
 }
 
 .cardTwoBottom {
@@ -60,6 +69,8 @@ img {
 .cardThreeTop {
     background-color: #B73EB7;
     cursor: pointer;
+    color: white;
+    padding: 1rem;
 }
 
 .cardThreeBottom {
@@ -73,6 +84,7 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+   
 }
 
 .noPad {
@@ -83,10 +95,16 @@ img {
 .removeBorder {
     border: none;
 }
+
+
+.fas, .far {
+    margin-top: 2rem;
+
 .zoom {
     transition: transform .2s; /* Animation */
    
 }
 .zoom:hover {
     transform: scale(1.08); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
 }
