@@ -20,16 +20,16 @@ export interface IStninfo {
                 state: string,
                 zipcode: string,
                 north_routes: {
-                    route: []
+                    route:  string []
                 },
                 south_routes: { 
-                    route: []
+                    route: string []
                 },
                 north_platforms: { 
-                    platform: []
+                    platform: string []
                 },
                 south_platforms: { 
-                    platform: []
+                    platform: string []
                 },
                 platform_info: string,
                 intro: { 
