@@ -8,8 +8,13 @@ img {
 
 .card {
     background-color: transparent;
-    width: 403px!important
+    width: 403px!important;
+    margin: 2.5rem;
+    display: flex;
+    justify-content: center;
 }
+
+
 
 .headerTitle {
     display: flex;
@@ -36,8 +41,8 @@ img {
 .cardOneTop {
     background-color: #50B820;
     cursor: pointer;
-    color: white; 
-    padding: 2rem; 
+    color: white;
+    padding: 2rem;
 }
 
 .cardOneBottom {
@@ -79,6 +84,7 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+   
 }
 
 .noPad {
@@ -88,4 +94,8 @@ img {
 
 .removeBorder {
     border: none;
+}
+
+.fas, .far {
+    margin-top: 2rem;
 }
