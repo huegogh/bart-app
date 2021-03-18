@@ -2,7 +2,7 @@
     background-color: #0064A8;
 }
 img{
-    height: 114px;
+    height: 90px;
     cursor: pointer;
 }
 .headerTitle{
@@ -10,13 +10,19 @@ img{
     justify-content: center;
 }
 .title{
-    margin-right: 80px;
-    font-size: 50px;
+    /* margin-right: 80px; */
+    font-size: 40px;
     font-weight: bold;
     color: #FFFFFF;
 }
 .seasonThree{
-    margin-top: 60px;
-    font-size: 30px;
+    /* margin-top: 15px; */
+    font-size: 20px;
     color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+end{
+    display:flex;
+    justify-content:flex-end;
 }
