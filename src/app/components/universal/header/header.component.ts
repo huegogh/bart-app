@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  initialText = 'This is not working!';
+  popArray:string[] = [''];
   dropArray:string[] = [
     'Memes',
     'Memes2',

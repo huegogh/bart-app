@@ -6,7 +6,11 @@
             <h3 class="mt-5">Select station to get upcoming departures:</h3>
             <div class="row mb-5">
                 <div class="col">
-                    <app-dropdown></app-dropdown>
+                    <div class="container">
+                        <select class=" rounded-0 custom-select optionStyle py-2" id="inputGroupSelect01">
+                            <option class="" *ngFor="let item of popArray">{{item}}</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="col">
                     <app-button (click)="toggle = !toggle" buttonText="Select"></app-button>
