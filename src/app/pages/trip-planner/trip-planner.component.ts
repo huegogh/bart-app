@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ITripsList } from '../../interfaces/trips-list';
 
 @Component({
   selector: 'app-trip-planner',
@@ -59,9 +60,15 @@ export class TripPlannerComponent implements OnInit {
     "West Dublin/Pleasanton",
     "West Oakland",
   ];
+
+  tripList: ITripsList[] = [];
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  passStation(value: string){
+    console.log(value);
   }
 
 }
