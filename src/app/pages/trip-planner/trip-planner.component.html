@@ -15,7 +15,8 @@
                                 </div>
                                 <div class="col-11 mt-3 pe-0">
                                     <div class="container">
-                                        <select class="rounded-0 custom-select optionStyle py-2" #inputGroupSelect01>
+                                        <select class="rounded-0 custom-select optionStyle py-2"
+                                            #inputGroupSelect01>
                                             <option class="" *ngFor="let item of popArray">{{item}}</option>
                                         </select>
                                     </div>
@@ -25,18 +26,19 @@
                                 </div>
                                 <div class="col-11 mt-3 pe-0">
                                     <div class="container">
-                                        <select class=" rounded-0 custom-select optionStyle py-2" #inputGroupSelect02>
+                                        <select class=" rounded-0 custom-select optionStyle py-2"
+                                            #inputGroupSelect02>
                                             <option class="" *ngFor="let item of popArray">{{item}}</option>
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-12 px-0 mt-4">
-                                    <button (click)="logMe(inputGroupSelect01.value,inputGroupSelect02.value)"
-                                        type="button" class="btn btn-primary">Search</button>
-                                </div>
                             </div>
                         </div>
                     </form>
+                    <div class="col-12 px-0 mt-4">
+                        <button (click)="logMe(inputGroupSelect01.value,inputGroupSelect02.value)" type="button"
+                            class="btn btn-primary">Search</button>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-12 mt-5 titleBG">
