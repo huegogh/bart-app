@@ -1,19 +1,24 @@
 <app-header></app-header>
 
-<div class="container">
-<div class="row">
+<div class="container-fluid">
+<div class="row mx-5">
+
         <div class="col">
             <h3 class="mt-5">Select station to get upcoming departures:</h3>
             <div class="row mb-5">
                 <div class="col">
-                    <app-dropdown></app-dropdown>
+                    <div class="container">
+                        <select class=" rounded-0 custom-select optionStyle py-2" id="inputGroupSelect01">
+                            <option class="" *ngFor="let item of popArray">{{item}}</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="col">
                     <app-button (click)="toggle = !toggle" buttonText="Select"></app-button>
                 </div>
-            </div>
-        
-            <table class="table pt-5">
+            </div>       
+            <table class="table col-lg-10 pt-5">
+
                 <tbody *ngIf="toggle">
                     <!-- use combo structural directive to display the contents of the table based on data being called in -->
                     <th>
@@ -22,7 +27,7 @@
                             <div class="col rightAlign">[[1:19am]]</div>
                         </div>
                     </th>
-        
+
                     <!-- platform block, ngFor for each platform entry -->
                     <!-- need to have conditional styling here:
                                 IF first in table, top border is not thicc, else top border is thick -->
@@ -53,20 +58,34 @@
                             </div>
                         </div>
                     </tr>
-        
-        
-        
+
+
+
                 </tbody>
             </table>
-            <div *ngIf="toggle" class="d-flex justify-content-end">
+            <div *ngIf="toggle" class="col-lg-10 d-flex justify-content-end">
                 <p><i class="fas fa-train"></i> = 3 door train <del class="redText">Cancelled Trip</del></p>
             </div>
         </div>
-        
+
         <div class="col-4">
-            <app-navigation></app-navigation>
+          <div class="container extraMargin">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="font41 ps-3 pt-1 m-0 titleBGRTD" >Real-Time Departures</p>
+                    </div>
+                    <div class="col-12">
+                        <p class="font33 ps-3 m-0 navLinks bodyBorder" routerLink="/trip-planner">Fare Calculator</p>
+                    </div>
+                    <div class="col-12">
+                        <p class="font33 ps-3 m-0 navLinks bodyBorder" routerLink="/schedules">Schedules</p>
+                    </div>
+                    <div class="col-12">
+                        <p class="font33 ps-3 m-0 navLinks bodyBorder active" routerLink="/departures">Real-Time Departures</p>
+                    </div>
+                </div>
+            </div>
         </div>
-</div>
+    </div>
 
 </div>
-

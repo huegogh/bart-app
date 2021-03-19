@@ -1,11 +1,15 @@
 <app-header></app-header>
 <div class="container-fluid">
-    <div class="row">
+    <div class="row mx-5">
         <div class="col-8 ms-5">
             <h3 class="mt-5 mb-4 ">Schedules By Station Results</h3>
             <div class="row">
                 <div class="col-2 headerTitle">
-                    <app-dropdown></app-dropdown>
+                    <div class="container">
+                        <select class=" rounded-0 custom-select optionStyle py-2" id="inputGroupSelect01">
+                            <option class="" *ngFor="let item of popArray">{{item}}</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="col-2">
                     <div class="mb-3">
@@ -15,7 +19,11 @@
                     </div>
                 </div>
                 <div class="col-2 headerTitle">
-                    <app-dropdown></app-dropdown>
+                    <div class="container">
+                        <select class=" rounded-0 custom-select optionStyle py-2" id="inputGroupSelect01">
+                            <option class="" *ngFor="let item of popArray">{{item}}</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="col-2">
                     <app-button (click)="toggle = !toggle" buttonText="Get Schedule"></app-button>
@@ -23,7 +31,7 @@
             </div>
         
             <h4 *ngIf="toggle" class="blueText mt-4">Station Schedule Results for [[station name]]</h4>
-           
+        
         
             <div class="row mt-4" *ngIf="toggle">
                 <div class="col">
@@ -69,7 +77,22 @@
             </div>
         </div>
         <div class="col-3 mt-5">
-            <app-navigation></app-navigation>
+           <div class="container extraMargin">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="font41 ps-3 pt-1 m-0 titleBGS">Schedule</p>
+                    </div>
+                    <div class="col-12">
+                        <p class="font33 ps-3 m-0 navLinks bodyBorder" routerLink="/trip-planner">Fare Calculator</p>
+                    </div>
+                    <div class="col-12">
+                        <p class="font33 ps-3 m-0 navLinks bodyBorder active" routerLink="/schedules">Schedules</p>
+                    </div>
+                    <div class="col-12">
+                        <p class="font33 ps-3 m-0 navLinks bodyBorder" routerLink="/departures">Real-Time Departures</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
