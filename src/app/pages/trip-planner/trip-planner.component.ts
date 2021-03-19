@@ -122,12 +122,7 @@ export class TripPlannerComponent implements OnInit {
   logMe(value1: string, value2: string){
     let abbrOne = this.abbrArray[this.popArray.indexOf(value1)];
     let abbrTwo = this.abbrArray[this.popArray.indexOf(value2)];
-    let finalUrl = '';
-    console.log(abbrOne);
-    console.log(abbrTwo);
-
-    finalUrl = `http://api.bart.gov/api/sched.aspx?cmd=arrive&orig=${abbrOne}&dest=${abbrTwo}&date=now&key=MW9S-E7SL-26DU-VV8V&b=2&a=2&l=1&json=y`
+    let finalUrl = `http://api.bart.gov/api/sched.aspx?cmd=arrive&orig=${abbrOne}&dest=${abbrTwo}&date=now&key=MW9S-E7SL-26DU-VV8V&b=2&a=2&l=1&json=y`
     console.log(finalUrl);
   }
-
 }
