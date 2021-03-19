@@ -14,7 +14,10 @@ export class DeparturesComponent implements OnInit {
   departTime = '';
   lineTest = '';
   lineHead = '';
-  item !: IItem[];
+  lineRoute = '';
+  linMins = '';
+  // item !: IItem[];
+  item = '';
   cityCalled:string = "";
 
   toggle = false;
@@ -77,7 +80,7 @@ export class DeparturesComponent implements OnInit {
 
   passValue(station: string){
     let passV: any = ScheduleServicesService.objectCities[station]
-    this.cityCalled = `http://api.bart.gov/api/sched.aspx?cmd=stnsched&orig=${passV}&key=MW9S-E7SL-26DU-VV8V&json=y`;
+    this.cityCalled = `https://api.bart.gov/api/etd.aspx?cmd=etd&orig=${passV}&key=MW9S-E7SL-26DU-VV8V&json=y`;
     console.log(this.cityCalled);
 
     // this.apiService.GetDepartInfo(this.cityCalled).subscribe(
@@ -93,12 +96,14 @@ export class DeparturesComponent implements OnInit {
 
     this.apiService.GetDepartInfo(this.cityCalled).subscribe({
       next: data => {
-        this.item = data.root.station.item;
+        this.item = data.root.station[0].etd[0].estimate[0].length;
         console.log(this.item);
-        this.testDepart = data.root.station.name;
+        this.lineRoute = data.root.station[0].etd[0].destination;
+        this.linMins = data.root.station[0].etd[0].estimate[0].minutes
+        //this.testDepart = data.root.station.name;
         this.departTime = data.root.date;
-        this.lineTest = data.root.station.item[0]['@line'];
-        this.lineHead = data.root.station.item[0]['@trainHeadStation'];
+        // this.lineTest = data.root.station.item[0]['@line'];
+        // this.lineHead = data.root.station.item[0]['@trainHeadStation'];
       }
     })
 

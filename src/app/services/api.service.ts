@@ -22,8 +22,8 @@ export class ApiService {
     return this.http.get<IAdvisory>(this.homeUrl);
   }
 
-  GetDepartInfo(departUrl: string): Observable<IStnschedule>{
-    return this.http.get<IStnschedule>(departUrl);
+  GetDepartInfo(departUrl: string): Observable<IDeparture>{
+    return this.http.get<IDeparture>(departUrl);
   }
 
 }
