@@ -10,7 +10,6 @@ import { Observable } from 'rxjs';
 export class StorageService implements OnInit {
 private StrgValue:string[] = this.getFromLocalStorage('v');
 
-  
 ngOnInit():void {
   
 }
@@ -23,12 +22,10 @@ saveToLocalStorage(value:string[]):void {
 }
 getFromLocalStorage(key: string){
   return localStorage.getItem(key) !== null ? this.GetString(key) : [''];
-  
 }
- GetString(str: string){
-   return JSON.parse(localStorage.getItem(str)!);
- }
-
+GetString(str: string){
+  return JSON.parse(localStorage.getItem(str)!);
+}
 AddValue(entry: any):void {
   this.StrgValue.push(entry);
   this.saveToLocalStorage(this.StrgValue);
@@ -38,5 +35,4 @@ Remove(index: number){
   localStorage.setItem('v',JSON.stringify(this.StrgValue))
 }
 }
-
 //StorageService
