@@ -60,7 +60,58 @@ export class TripPlannerComponent implements OnInit {
     "West Dublin/Pleasanton",
     "West Oakland",
   ];
-  abbrArray:string[] = [];
+  abbrArray:string[] = [
+    "12th",
+    "16th",
+    "19th",
+    "24th",
+    "antc",
+    "ashb",
+    "balb",
+    "bayf",
+    "bery",
+    "cast",
+    "civc",
+    "cols",
+    "colm",
+    "conc",
+    "daly",
+    "dbrk",
+    "dubl",
+    "deln",
+    "plza",
+    "embr",
+    "frmt",
+    "ftvl",
+    "glen",
+    "hayw",
+    "lafy",
+    "lake",
+    "mcar",
+    "mlbr",
+    "mlpt",
+    "mont",
+    "nbrk",
+    "ncon",
+    "oakl",
+    "orin",
+    "pitt",
+    "pctr",
+    "phil",
+    "powl",
+    "rich",
+    "rock",
+    "sbrn",
+    "sfia",
+    "sanl",
+    "shay",
+    "ssan",
+    "ucty",
+    "wcrk",
+    "warm",
+    "wdub",
+    "woak",
+  ];
 
   tripList: ITripsList[] = [];
   constructor() { }
@@ -69,8 +120,14 @@ export class TripPlannerComponent implements OnInit {
   }
 
   logMe(value1: string, value2: string){
-    console.log(value1);
-    console.log(value2);
+    let abbrOne = this.abbrArray[this.popArray.indexOf(value1)];
+    let abbrTwo = this.abbrArray[this.popArray.indexOf(value2)];
+    let finalUrl = '';
+    console.log(abbrOne);
+    console.log(abbrTwo);
+
+    finalUrl = `http://api.bart.gov/api/sched.aspx?cmd=arrive&orig=${abbrOne}&dest=${abbrTwo}&date=now&key=MW9S-E7SL-26DU-VV8V&b=2&a=2&l=1&json=y`
+    console.log(finalUrl);
   }
 
 }
