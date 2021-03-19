@@ -7,7 +7,7 @@
 
             <form>
                 <div class="row">
-                    <div class="col-2 headerTitle">
+                    <div class="col headerTitle">
                         <div class="container">
                             <select class=" rounded-0 custom-select optionStyle py-2" #stationSelector >
                                 <option class="" *ngFor="let item of popArray">{{item}}</option>
@@ -15,10 +15,10 @@
                             <!-- onchange, target specific function that sets the variable and then use the button to create the URL and then sends it to service -->
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-3">
                         <div class="mb-3">
                             <!-- <label for="exampleInputEmail1" class="form-label sr-only">Date</label> -->
-                            <input type="date" class="form-control"  aria-describedby="timePicker" #timeSelector>
+                            <input type="date" class="form-control rounded-0 custom-select optionStyle py-1"  aria-describedby="timePicker" #timeSelector>
                             <div id="emailHelp" class="form-text"></div>
                         </div>
                     </div>
@@ -31,9 +31,8 @@
                     </div>
                     <div class="col-2">
                         <!-- <app-button (click)="toggle = !toggle" buttonText="Get Schedule"></app-button> -->
-                        <!-- <button (click)="logMe(dateSelector.value)">dsfgs</button>
-                         -->
-                        <button type="button" class="btn btn-primary" (click)="logMe(stationSelector.value, timeSelector.value, dateSelector.value)">Primary</button>
+                        <app-button (click)="logMe(stationSelector.value, timeSelector.value, dateSelector.value)" buttonText="Get Schedule"></app-button>
+                        <!-- <button type="button" class="btn btn-primary" (click)="logMe(stationSelector.value, timeSelector.value, dateSelector.value)">Primary</button> -->
                     </div>
                 </div>
             </form>
