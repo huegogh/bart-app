@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { StorageService } from 'src/app/services/storage.service';
 
 @Component({
   selector: 'app-header',
@@ -9,15 +10,18 @@ export class HeaderComponent implements OnInit {
 
   @Input() initialText = 'This is not working!';
   @Input() popArray:string[] = [''];
-
+  Favorites:String [] = [];
+  
  
   dropArray:string[] = [
     'Favorites',
   ];
 
-  constructor() { }
+  constructor(private fav : StorageService) { }
 
   ngOnInit(): void {
+    
   }
+  
 
 }
