@@ -1,10 +1,9 @@
 <app-header></app-header>
 
-<div class="container-fluid">
-<div class="row">
-
+<div class="container-fluid mt-5">
+<div class="row mx-5">
         <div class="col">
-            <h3 class="mt-5">Select station to get upcoming departures:</h3>
+            <h3>Select station to get upcoming departures:</h3>
             <div class="row mb-5">
                 <div class="col">
                     <div class="container">
@@ -70,7 +69,22 @@
         </div>
 
         <div class="col-4">
-            <app-navigation></app-navigation>
+          <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="font41 ps-3 pt-1 m-0 titleBGRTD" >Real-Time Departures</p>
+                    </div>
+                    <div class="col-12">
+                        <p class="font33 ps-3 m-0 navLinks bodyBorder" routerLink="/trip-planner">Fare Calculator</p>
+                    </div>
+                    <div class="col-12">
+                        <p class="font33 ps-3 m-0 navLinks bodyBorder" routerLink="/schedules">Schedules</p>
+                    </div>
+                    <div class="col-12">
+                        <p class="font33 ps-3 m-0 navLinks bodyBorder active" routerLink="/departures">Real-Time Departures</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
