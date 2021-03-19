@@ -7,13 +7,13 @@
             <div class="row mb-5">
                 <div class="col">
                     <div class="container">
-                        <select class=" rounded-0 custom-select optionStyle py-2" id="inputGroupSelect01">
-                            <option class="" *ngFor="let item of popArray">{{item}}</option>
+                        <select class=" rounded-0 custom-select optionStyle py-2" id="inputGroupSelect01" #departSelector>
+                            <option class=""  *ngFor="let item of popArray">{{item}}</option>
                         </select>
                     </div>
                 </div>
                 <div class="col">
-                    <app-button (click)="toggle = !toggle" buttonText="Select"></app-button>
+                    <app-button (click)="passValue(departSelector.value)" buttonText="Select"></app-button>
                 </div>
             </div>
 
@@ -23,7 +23,7 @@
                     <th>
                         <div class="row">
                             <div class="col"><i class="fas fa-star"></i>[[12th St. Oakland City Center]]</div>
-                            <div class="col rightAlign">[[1:19am]]</div>
+                            <div class="col rightAlign">{{departTime}}</div>
                         </div>
                     </th>
 
