@@ -15,9 +15,7 @@ export class HeaderComponent implements OnInit {
   
  
   dropArray:string[] = [
-    'Memes',
-    'Memes2',
-    'Memes3'
+    'Favorites',
   ];
 
   constructor(private FavList : StorageService, private route: Router) { }
