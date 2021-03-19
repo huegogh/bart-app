@@ -75,15 +75,32 @@ export class DeparturesComponent implements OnInit {
     let passV: any = ScheduleServicesService.objectCities[station]
     this.cityCalled = `http://api.bart.gov/api/sched.aspx?cmd=stnsched&orig=${passV}&key=MW9S-E7SL-26DU-VV8V&json=y`;
     console.log(this.cityCalled);
+
+    // this.apiService.GetDepartInfo(this.cityCalled).subscribe(
+    //   data => {
+    //     console.log(data.root.station.name);
+    //     console.log(data.root.time);
+    //     //this.testDepart = data.root.station[0];
+    //     this.departTime = data.root.time;
+    //   }
+    // )
+
+
+    this.apiService.GetDepartInfo(this.cityCalled).subscribe({
+      next: data => {
+        console.log(data.root.station.name);
+        this.testDepart = data.root.station.name;
+      }
+    })
   }
 
   ngOnInit(): void {
-    this.apiService.GetDepartInfo().subscribe({
-      next: data => {
-        this.testDepart = data.root.station[0].name;
-        this.departTime = data.root.time;
-      }
-    })
+    // this.apiService.GetDepartInfo().subscribe({
+    //   next: data => {
+    //     this.testDepart = data.root.station[0].name;
+    //     this.departTime = data.root.time;
+    //   }
+    // })
   }
 
 }

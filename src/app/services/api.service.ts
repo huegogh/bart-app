@@ -3,6 +3,8 @@ import { HttpClient } from "@angular/common/http";
 import { Observable } from 'rxjs';
 import { IAdvisory } from '../interfaces/advisory'
 import { IDeparture } from '../interfaces/depature';
+import { IStation } from '../interfaces/station';
+import { IStnschedule } from '../interfaces/stnschedule'
 
 @Injectable({
   providedIn: 'root'
@@ -13,8 +15,6 @@ export class ApiService {
   calcUrl = '';
   scheduleUrl = '';
   platformUrl = '';
-  departuresUrl = 'https://api.bart.gov/api/etd.aspx?cmd=etd&orig=RICH&key=MW9S-E7SL-26DU-VV8V&json=y';
-
 
   constructor(private http: HttpClient) { }
 
@@ -22,9 +22,8 @@ export class ApiService {
     return this.http.get<IAdvisory>(this.homeUrl);
   }
 
-  GetDepartInfo(): Observable<IDeparture>{
-    return this.http.get<IDeparture>(this.departuresUrl);
+  GetDepartInfo(departUrl: string): Observable<IStnschedule>{
+    return this.http.get<IStnschedule>(departUrl);
   }
-
 
 }
