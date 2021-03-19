@@ -8,6 +8,7 @@ import { DropdownComponent } from '../../components/universal/dropdown/dropdown.
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  closeResult = '';
   currentMessage = 'Hello';
   constructor() { }
 
@@ -16,3 +17,7 @@ export class HomeComponent implements OnInit {
   }
 
 }
+
+
+
+

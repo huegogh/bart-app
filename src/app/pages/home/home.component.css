@@ -8,10 +8,10 @@ img {
 
 .card {
     background-color: transparent;
-    width: 403px!important;
-    margin: 2.5rem;
-    display: flex;
-    justify-content: center;
+    width: 360px !important;
+    /* margin: 2.5rem; */
+    /* display: flex; */
+    /* justify-content: center; */
 }
 
 
@@ -36,6 +36,7 @@ img {
 
 .cardMargin {
     padding-top: 150px;
+
 }
 
 .cardOneTop {
@@ -110,12 +111,20 @@ img {
     margin-top: 2rem;
 }
 .zoom {
+
     transition: transform .2s; /* Animation */
 }
+
 .zoom:hover {
-    transform: scale(1.08); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.03); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 
 }
+
+.btwn{
+    display: flex;
+    justify-content: space-between;
+}
+
 .alertColor{
     background-color: #E12B38;
     display: flex;
