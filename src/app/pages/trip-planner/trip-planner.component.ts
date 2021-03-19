@@ -7,7 +7,11 @@ import { ITripsList } from '../../interfaces/trips-list';
   styleUrls: ['./trip-planner.component.css']
 })
 export class TripPlannerComponent implements OnInit {
+
+  toggle = false;
+
   initialText = 'This is not working!';
+
   popArray:string[] = [
     "12th St. Oakland City Center",
     "16th St. Misson",
@@ -60,6 +64,7 @@ export class TripPlannerComponent implements OnInit {
     "West Dublin/Pleasanton",
     "West Oakland",
   ];
+
   abbrArray:string[] = [
     "12th",
     "16th",
@@ -114,6 +119,7 @@ export class TripPlannerComponent implements OnInit {
   ];
 
   tripList: ITripsList[] = [];
+
   constructor() { }
 
   ngOnInit(): void {

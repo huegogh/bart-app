@@ -1,43 +1,37 @@
-.navBG{
+.navBG {
     background-color: #0064A8;
 }
-img{
-    height: 114px;
+
+img {
+    height: 90px;
     cursor: pointer;
+    padding-left: 2rem;
 }
-.headerTitle{
+
+.headerTitle {
     display: flex;
     justify-content: center;
 }
-.title{
-    margin-right: 80px;
-    font-size: 50px;
+
+.title {
+    /* margin-right: 80px; */
+    font-size: 40px;
     font-weight: bold;
     color: #FFFFFF;
 }
-.seasonThree{
-    margin-top: 60px;
-    font-size: 30px;
+
+.seasonThree {
+    /* margin-top: 15px; */
+    font-size: 20px;
     color: #FFFFFF;
-}
-
-.custom-select {
-    max-width: 150px;
-    border-color: rgb(161, 161, 161);
     cursor: pointer;
-}
-.custom-select select {
-
-    -webkit-appearance: none;
-
-}
-
-.optionStyle{
-    font-size: 30px;
-    min-width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 3rem;
+    padding-left: 2rem;
 }
 
-.container{
-    min-width: 100%;
-    padding:0;
+end {
+    display: flex;
+    justify-content: flex-end;
 }

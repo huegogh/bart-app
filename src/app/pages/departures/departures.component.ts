@@ -75,6 +75,7 @@ export class DeparturesComponent implements OnInit {
     "West Dublin/Pleasanton",
     "West Oakland",
   ];
+
   constructor(private apiService: ApiService) { }
 
 
@@ -109,8 +110,12 @@ export class DeparturesComponent implements OnInit {
 
   }
 
+
   ngOnInit(): void {
     
+  }
+  AddToFavoritesList(value: string){
+    this.FavList.AddValue(value)
   }
 
 }

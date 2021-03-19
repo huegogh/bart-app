@@ -9,8 +9,7 @@ import { ApiService } from '../../services/api.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
-  delayReport = '';
+  closeResult = '';
   currentMessage = 'Hello';
 
   constructor(private apiService: ApiService) { }
@@ -25,3 +24,7 @@ export class HomeComponent implements OnInit {
   }
 
 }
+
+
+
+

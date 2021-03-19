@@ -1,11 +1,11 @@
 <app-header></app-header>
-<div class="container-fluid mainContainer ">
-    <div class="row d-flex justify-content-between">
+<div class="container-fluid mt-5">
+    <div class="row d-flex justify-content-between mx-5">
         <div class="col-6">
             <div class="container ms-5">
                 <div class="row">
                     <div class="col-12 titleBG d-flex align-items-center">
-                        <p class="title ms-3">Trip Planner:</p>
+                        <p class="title ms-3">Fare Calculator:</p>
                     </div>
                     <form>
                         <div class="container">
@@ -40,7 +40,7 @@
                             class="btn btn-primary">Search</button>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" *ngIf="toggle">
                     <div class="col-12 mt-5 titleBG">
                         <p class="font30 my-3">Sun, 3/14/2021</p>
                     </div>
@@ -63,8 +63,23 @@
             </div>
         </div>
 
-        <div class="col-3 ">
-            <app-navigation></app-navigation>
+        <div class="col-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="font41 ps-3 pt-1 m-0 titleBGFC">Fare Calculator</p>
+                    </div>
+                    <div class="col-12">
+                        <p class="font33 ps-3 m-0 navLinks bodyBorder active" routerLink="/trip-planner">Fare Calculator</p>
+                    </div>
+                    <div class="col-12">
+                        <p class="font33 ps-3 m-0 navLinks bodyBorder" routerLink="/schedules">Schedules</p>
+                    </div>
+                    <div class="col-12">
+                        <p class="font33 ps-3 m-0 navLinks bodyBorder" routerLink="/departures">Real-Time Departures</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

@@ -1,6 +1,6 @@
 <app-header></app-header>
 <div class="container-fluid">
-    <div class="row">
+    <div class="row d-flex justify-content-between mx-5">
         <div class="col-8 ms-5">
             <h3 class="mt-5 mb-4 ">Schedules By Station Results</h3>
 
@@ -86,7 +86,22 @@
             </div>
         </div>
         <div class="col-3 mt-5">
-            <app-navigation></app-navigation>
+           <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="font41 ps-3 pt-1 m-0 titleBGS">Schedule</p>
+                    </div>
+                    <div class="col-12">
+                        <p class="font33 ps-3 m-0 navLinks bodyBorder" routerLink="/trip-planner">Fare Calculator</p>
+                    </div>
+                    <div class="col-12">
+                        <p class="font33 ps-3 m-0 navLinks bodyBorder active" routerLink="/schedules">Schedules</p>
+                    </div>
+                    <div class="col-12">
+                        <p class="font33 ps-3 m-0 navLinks bodyBorder" routerLink="/departures">Real-Time Departures</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
