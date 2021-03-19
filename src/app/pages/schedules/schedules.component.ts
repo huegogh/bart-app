@@ -8,6 +8,25 @@ import { Component, OnInit } from '@angular/core';
 export class SchedulesComponent implements OnInit {
   toggle = false;
   initialText = 'This is not working!';
+
+  callDetailed:string = "";
+  callNorthSouth:string="";
+
+
+  // http://api.bart.gov/api/sched.aspx?cmd=stnsched&orig=
+  //[[12th]] 
+  //this will be assigned with data coming in from button click
+  //&date=[[<mm/dd/yyyy>]]
+  //&key=MW9S-E7SL-26DU-VV8V&l=1&json=y 
+  //(detailed times/route heads)
+
+  //   http://api.bart.gov/api/stn.aspx?cmd=stninfo&orig=
+  // 24th replaceed with info coming in
+  //&key=MW9S-E7SL-26DU-VV8V&json=y 
+  //(north and south)
+
+  
+
   popArray:string[] = [
     "12th St. Oakland City Center",
     "16th St. Misson",
@@ -105,9 +124,95 @@ export class SchedulesComponent implements OnInit {
     '12:30 AM',
   ];
 
+  abbrArray: string[] = [
+    "12th",
+    "16th",
+    "19th",
+    "24th",
+    "antc",
+    "ashb",
+    "balb",
+    "bayf",
+    "bery",
+    "cast",
+    "civc",
+    "cols",
+    "colm",
+    "conc",
+    "daly",
+    "dbrk",
+    "dubl",
+    "deln",
+    "plza",
+    "embr",
+    "frmt",
+    "ftvl",
+    "glen",
+    "hayw",
+    "lafy",
+    "lake",
+    "mcar",
+    "mlbr",
+    "mlpt",
+    "mont",
+    "nbrk",
+    "ncon",
+    "oakl",
+    "orin",
+    "pitt",
+    "pctr",
+    "phil",
+    "powl",
+    "rich",
+    "rock",
+    "sbrn",
+    "sfia",
+    "sanl",
+    "shay",
+    "ssan",
+    "ucty",
+    "wcrk",
+    "warm",
+    "wdub",
+    "woak",
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  passStation(value: string){
+    console.log(value);
+  }
+
+  convertDate(date: string){
+    let arrayDate = date.split("-");
+    return [arrayDate[1], arrayDate[2], arrayDate[0]].join("/");
+  }
+
+  logMe(station: string, date: string, time: string){
+    console.log(station, this.convertDate(date), time)
+
+    this.callDetailed = `http://api.bart.gov/api/sched.aspx?cmd=stnsched&orig=${this.abbrArray[this.popArray.indexOf(station)]}&date=${this.convertDate(date)}&key=MW9S-E7SL-26DU-VV8V&l=1&json=y`;
+
+    console.log(this.callDetailed);
+      // http://api.bart.gov/api/sched.aspx?cmd=stnsched&orig=
+  //[[12th]] 
+  //this will be assigned with data coming in from button click
+  //&date=[[<mm/dd/yyyy>]]
+  //&key=MW9S-E7SL-26DU-VV8V&l=1&json=y 
+  //(detailed times/route heads)
+  
+    this.callNorthSouth = `http://api.bart.gov/api/stn.aspx?cmd=stninfo&orig=${this.abbrArray[this.popArray.indexOf(station)]}&date=${this.convertDate(date)}&key=MW9S-E7SL-26DU-VV8V&json=y`;
+
+    console.log(this.callNorthSouth)
+
+  //   http://api.bart.gov/api/stn.aspx?cmd=stninfo&orig=
+  // [[24th]] replaceed with info coming in
+  //&date=[[mm/dd/yyyy]]
+  //&key=MW9S-E7SL-26DU-VV8V&json=y 
+  //(north and south)
+
+  }
 }
