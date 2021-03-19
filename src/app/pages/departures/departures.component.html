@@ -1,10 +1,9 @@
 <app-header></app-header>
 
-<div class="container-fluid">
-<div class="row">
-
+<div class="container-fluid mt-5">
+<div class="row mx-5">
         <div class="col">
-            <h3 class="mt-5">Select station to get upcoming departures:</h3>
+            <h3>Select station to get upcoming departures:</h3>
             <div class="row mb-5">
                 <div class="col">
                     <div class="container">
@@ -23,8 +22,16 @@
                     <!-- use combo structural directive to display the contents of the table based on data being called in -->
                     <th>
                         <div class="row">
-                            <!--DELETE BEFORE MERGE: Star is here-->
-                            <div class="col"><i (click)="AddToFavoritesList(dropList.value)" class="fas fa-star"></i>[[12th St. Oakland City Center]]</div>
+
+                           
+                          
+
+                            <div class="col"> <i (click)="AddToFavoritesList(dropList.value)" 
+                                [ngClass]="changeStarOutline ? 'far fa-star' : 'fas fa-star yellow'" 
+                                (mouseover)="changeStarOutline=false" (mouseout)="changeStarOutline=true"
+                                placement="top" ngbTooltip="Add to Favorites"
+                                ></i>[[12th St. Oakland City Center]]</div>
+
                             <div class="col rightAlign">[[1:19am]]</div>
                         </div>
                     </th>
@@ -70,7 +77,22 @@
         </div>
 
         <div class="col-4">
-            <app-navigation></app-navigation>
+          <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="font41 ps-3 pt-1 m-0 titleBGRTD" >Real-Time Departures</p>
+                    </div>
+                    <div class="col-12">
+                        <p class="font33 ps-3 m-0 navLinks bodyBorder" routerLink="/trip-planner">Fare Calculator</p>
+                    </div>
+                    <div class="col-12">
+                        <p class="font33 ps-3 m-0 navLinks bodyBorder" routerLink="/schedules">Schedules</p>
+                    </div>
+                    <div class="col-12">
+                        <p class="font33 ps-3 m-0 navLinks bodyBorder active" routerLink="/departures">Real-Time Departures</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

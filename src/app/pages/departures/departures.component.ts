@@ -61,7 +61,12 @@ export class DeparturesComponent implements OnInit {
     "West Dublin/Pleasanton",
     "West Oakland",
   ];
-  constructor(private FavList: StorageService) { }
+
+  changeStarOutline: boolean;
+   constructor(private FavList: StorageService) {
+    this.changeStarOutline = true;
+  }
+
 
   ngOnInit(): void {
   }
