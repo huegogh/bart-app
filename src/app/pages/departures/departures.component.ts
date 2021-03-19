@@ -60,7 +60,10 @@ export class DeparturesComponent implements OnInit {
     "West Dublin/Pleasanton",
     "West Oakland",
   ];
-  constructor() { }
+  changeStarOutline: boolean;
+  constructor() {
+    this.changeStarOutline = true;
+  }
 
   ngOnInit(): void {
   }
