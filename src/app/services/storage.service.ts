@@ -37,6 +37,7 @@ Remove(index: number){
   this.StrgValue.splice(index,1);
   localStorage.setItem('v',JSON.stringify(this.StrgValue))
 }
+  
 }
 
 //StorageService

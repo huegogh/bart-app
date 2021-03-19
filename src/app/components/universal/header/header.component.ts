@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { StorageService } from 'src/app/services/storage.service';
 
 @Component({
@@ -17,11 +18,13 @@ export class HeaderComponent implements OnInit {
     'Favorites',
   ];
 
-  constructor(private fav : StorageService) { }
+  constructor(private FavList : StorageService, private route: Router) { }
 
   ngOnInit(): void {
-    
+    this.Favorites = this.FavList.GetValue();
   }
-  
+  OnChange(value: string){
+    console.log(value)
+  }
 
 }

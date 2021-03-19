@@ -13,8 +13,12 @@
             <p class="title">BART Web-Application</p>
         </div>
 
-        <div class="col-3">
-            <app-dropdown [popArray] = "dropArray"></app-dropdown>
+        <div class="col-2 headerTitle">
+            <div class="container">
+                <select name="manager" #FavList (change)="OnChange(FavList.value)"  class=" rounded-0 custom-select optionStyle py-2" id="inputGroupSelect01">
+                    <option class="" *ngFor="let item of Favorites">{{item}}</option>
+                </select>
+            </div>
 
         </div>
 </nav>

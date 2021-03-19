@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { StorageService } from 'src/app/services/storage.service';
 
 @Component({
   selector: 'app-departures',
@@ -60,12 +61,17 @@ export class DeparturesComponent implements OnInit {
     "West Dublin/Pleasanton",
     "West Oakland",
   ];
+
   changeStarOutline: boolean;
-  constructor() {
+   constructor(private FavList: StorageService) {
     this.changeStarOutline = true;
   }
 
+
   ngOnInit(): void {
+  }
+  AddToFavoritesList(value: string){
+    this.FavList.AddValue(value)
   }
 
 }
