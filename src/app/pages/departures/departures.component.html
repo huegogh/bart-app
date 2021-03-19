@@ -33,7 +33,7 @@
                     <tr class="thiccTop">
                         <div class="row">
                             <div class="col">
-                                <h5 class="mt-4"><b>[[Platform 1]]</b></h5>
+                                <h5 class="mt-4"><b>{{lineTest}}</b></h5>
                             </div>
                             <div class="col">
                                 <h5 class="mt-4 rightAlign"><b>Arriving In:</b></h5>
@@ -41,25 +41,13 @@
                         </div>
                     </tr>
                     <tr>
-                        <div class="row">
-                            <div class="col">[[Berryessa]]
+                        <div class="row" *ngFor='let stop of item'>
+                            <div class="col">{{stop["@line"]}}
                             </div>
                             <div class="col rightAlign">[[10 min (10 car <i class="fas fa-train"></i>) 29 min (8 car)]]
                             </div>
                         </div>
                     </tr>
-                    <tr>
-                        <!-- BACKEND: ALSO NOTE THAT there is extra padding on the last entry of the platform -->
-                        <div class="row mb-5">
-                            <div class="col">[[Dublin/ Pleasanton]]
-                            </div>
-                            <div class="col rightAlign">[[10 min (10 car <i class="fas fa-train"></i>) 29 min (10 car)]]
-                            </div>
-                        </div>
-                    </tr>
-
-
-
                 </tbody>
             </table>
             <div *ngIf="toggle" class="d-flex justify-content-end">

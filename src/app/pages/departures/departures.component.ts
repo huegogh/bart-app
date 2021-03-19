@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { IItem } from 'src/app/interfaces/item';
 import { ApiService } from '../../services/api.service';
 import { ScheduleServicesService } from '../../services/schedule-services.service';
 
@@ -11,6 +12,9 @@ import { ScheduleServicesService } from '../../services/schedule-services.servic
 export class DeparturesComponent implements OnInit {
   testDepart = '';
   departTime = '';
+  lineTest = '';
+  lineHead = '';
+  item !: IItem[];
   cityCalled:string = "";
 
   toggle = false;
@@ -86,21 +90,22 @@ export class DeparturesComponent implements OnInit {
     // )
 
 
+
     this.apiService.GetDepartInfo(this.cityCalled).subscribe({
       next: data => {
-        console.log(data.root.station.name);
+        this.item = data.root.station.item;
+        console.log(this.item);
         this.testDepart = data.root.station.name;
+        this.departTime = data.root.date;
+        this.lineTest = data.root.station.item[0]['@line'];
+        this.lineHead = data.root.station.item[0]['@trainHeadStation'];
       }
     })
+
   }
 
   ngOnInit(): void {
-    // this.apiService.GetDepartInfo().subscribe({
-    //   next: data => {
-    //     this.testDepart = data.root.station[0].name;
-    //     this.departTime = data.root.time;
-    //   }
-    // })
+    
   }
 
 }
