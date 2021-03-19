@@ -22,8 +22,11 @@
                     <!-- use combo structural directive to display the contents of the table based on data being called in -->
                     <th>
                         <div class="row">
-                            <!--DELETE BEFORE MERGE: Star is here-->
-                            <div class="col"><i class="fas fa-star"></i>[[12th St. Oakland City Center]]</div>
+                            <div class="col"> <i 
+                                [ngClass]="changeStarOutline ? 'far fa-star' : 'fas fa-star yellow'" 
+                                (mouseover)="changeStarOutline=false" (mouseout)="changeStarOutline=true"
+                                placement="top" ngbTooltip="Add to Favorites"
+                                ></i>[[12th St. Oakland City Center]]</div>
                             <div class="col rightAlign">[[1:19am]]</div>
                         </div>
                     </th>
