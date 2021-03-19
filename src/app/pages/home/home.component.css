@@ -99,7 +99,7 @@ img {
 
 .fas, .far {
     margin-top: 2rem;
-
+}
 .zoom {
     transition: transform .2s; /* Animation */
    
