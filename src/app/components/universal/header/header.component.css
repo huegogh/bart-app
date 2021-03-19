@@ -1,0 +1,37 @@
+.navBG {
+    background-color: #0064A8;
+}
+
+img {
+    height: 90px;
+    cursor: pointer;
+    padding-left: 2rem;
+}
+
+.headerTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    /* margin-right: 80px; */
+    font-size: 40px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.seasonThree {
+    /* margin-top: 15px; */
+    font-size: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-top: 3rem;
+    padding-left: 2rem;
+}
+
+end {
+    display: flex;
+    justify-content: flex-end;
+}

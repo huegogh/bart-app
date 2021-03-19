@@ -1,0 +1,20 @@
+.pointer {
+    /* max-width: 150px; */
+    /* border-color: rgb(161, 161, 161); */
+    cursor: pointer;
+}
+/* .custom-select select {
+    -webkit-appearance: none;
+} */
+
+.optionStyle{
+    font-size: 17px;
+    word-wrap: break-word;
+    min-width: 100%;
+    /* font-size: 1em; */
+}
+
+.container{
+    min-width: 100%;
+    /* padding:0; */
+}

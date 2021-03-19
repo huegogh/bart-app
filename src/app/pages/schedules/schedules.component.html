@@ -1,0 +1,107 @@
+<app-header></app-header>
+<div class="container-fluid">
+    <div class="row d-flex justify-content-between mx-5">
+        <div class="col-8 ms-5">
+            <h3 class="mt-5 mb-4 ">Schedules By Station Results</h3>
+
+
+            <form>
+                <div class="row">
+                    <div class="col headerTitle">
+                        <div class="container">
+                            <select class=" rounded-0 custom-select optionStyle py-2" #stationSelector >
+                                <option class="" *ngFor="let item of popArray">{{item}}</option>
+                            </select>
+                            <!-- onchange, target specific function that sets the variable and then use the button to create the URL and then sends it to service -->
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="mb-3">
+                            <!-- <label for="exampleInputEmail1" class="form-label sr-only">Date</label> -->
+                            <input type="date" class="form-control rounded-0 custom-select optionStyle py-1"  aria-describedby="timePicker" #timeSelector>
+                            <div id="emailHelp" class="form-text"></div>
+                        </div>
+                    </div>
+                    <div class="col-2 headerTitle">
+                        <div class="container">
+                            <select class=" rounded-0 custom-select optionStyle py-2" #dateSelector>
+                                <option class="" *ngFor="let item of timeArray">{{item}}</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <!-- <app-button (click)="toggle = !toggle" buttonText="Get Schedule"></app-button> -->
+                        <app-button (click)="logMe(stationSelector.value, timeSelector.value, dateSelector.value)" buttonText="Get Schedule"></app-button>
+                        <!-- <button type="button" class="btn btn-primary" (click)="logMe(stationSelector.value, timeSelector.value, dateSelector.value)">Primary</button> -->
+                    </div>
+                </div>
+            </form>
+
+
+
+            <h4 *ngIf="toggle" class="blueText mt-4">Station Schedule Results for [[station name]]</h4>
+
+
+            <div class="row mt-4" *ngIf="toggle">
+                <div class="col">
+                    <strong>[[Northbound Platform]]</strong>
+                    <table class="table">
+                        <tbody>
+                            <!-- use ngFor directive for the data coming in, limit to 11 entries. pull from DataService/APICall -->
+                            <tr>
+                                <td scope="row">07:31PM</td>
+                                <td>Richmond</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">07:31PM</td>
+                                <td>Richmond</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">07:31PM</td>
+                                <td>Richmond</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col">
+                    <strong>[[Southbound Platform]]</strong>
+                    <table class="table">
+                        <tbody>
+                            <!-- use ngFor directive for the data coming in, limit to 11 entries. pull from DataService/APICall -->
+                            <tr>
+                                <td scope="row">07:31PM</td>
+                                <td>Richmond</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">07:31PM</td>
+                                <td>Richmond</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">07:31PM</td>
+                                <td>Richmond</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 mt-5">
+           <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="font41 ps-3 pt-1 m-0 titleBGS">Schedule</p>
+                    </div>
+                    <div class="col-12">
+                        <p class="font33 ps-3 m-0 navLinks bodyBorder" routerLink="/trip-planner">Fare Calculator</p>
+                    </div>
+                    <div class="col-12">
+                        <p class="font33 ps-3 m-0 navLinks bodyBorder active" routerLink="/schedules">Schedules</p>
+                    </div>
+                    <div class="col-12">
+                        <p class="font33 ps-3 m-0 navLinks bodyBorder" routerLink="/departures">Real-Time Departures</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

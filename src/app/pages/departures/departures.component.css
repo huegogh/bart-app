@@ -1,0 +1,90 @@
+table {
+    background-color: #B73EB736;
+    border: 1px solid #707070;
+    /* width: 70% */
+}
+
+td {
+    padding: 20px!important;
+    border: 1px solid #707070!important;
+}
+
+th {
+    border: 1px solid #707070;
+    background-color: #B73EB7;
+    color: white
+}
+
+tr {
+    border: 1px solid #707070;
+}
+
+.rightAlign {
+    text-align: right;
+}
+
+.thiccTop {
+    border-top: 2px solid;
+}
+
+.custom-select {
+    max-width: 150px;
+    border-color: rgb(161, 161, 161);
+    cursor: pointer;
+}
+.custom-select select {
+
+    -webkit-appearance: none;
+
+}
+
+.optionStyle{
+    font-size: 30px;
+    min-width: 100%;
+}
+
+.container{
+    min-width: 100%;
+    padding:0;
+}
+
+/********** COLUMN NAV*********/
+.titleBGFC{
+    background-color: #428C21
+}
+.titleBGS{
+    background-color: #00A1FF
+}
+.titleBGRTD{
+    background-color: #B73EB7
+}
+.font41{
+    font-size:35px;
+    color:white;
+}
+.font33{
+    font-size:30px;
+}
+
+
+.bodyBorder{
+    border-bottom: solid 1.5px #707070;
+}
+.extraMargin{
+    margin-top: 60px;
+}
+.navLinks:hover, .active{
+background-color: #E9E9E9;
+}
+.navLinks{
+    user-select: none;
+    cursor: pointer;
+}
+
+/********** COLUMN NAV*********/
+
+/********** Star color*********/
+.yellow{
+    color: yellow;
+}
+/********** Star color*********/

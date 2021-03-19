@@ -1,27 +1,13 @@
-# BartApp
+#  _CodeStack Academy Student's Season 3
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.4.
+16 student's came togther to collabarate in this next project of building the Bart Web App.
 
-## Development server
+Using the ( https://www.bart.gov/ "Bart Website")  as a reference, we must pull a specific API that is provided to us.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# Here's a quick prototype of what we have ↓↓
+https://xd.adobe.com/view/0e88e8ff-aeef-41bd-9954-25fb521c0528-5bdb/
 
-## Code scaffolding
+![Screenshot (322)](https://user-images.githubusercontent.com/61571099/111510188-c5a0bb00-870a-11eb-9f7c-4437262c52ca.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

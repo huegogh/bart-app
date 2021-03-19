@@ -1,0 +1,141 @@
+.navBG {
+    background-color: #0064A8;
+}
+
+img {
+    height: 114px;
+}
+
+.card {
+    background-color: transparent;
+    width: 360px !important;
+    /* margin: 2.5rem; */
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+
+
+.headerTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    margin-right: 80px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.seasonThree {
+    margin-top: 60px;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.cardMargin {
+    padding-top: 150px;
+
+}
+
+.cardOneTop {
+    background-color: #50B820;
+    cursor: pointer;
+    color: white;
+    padding: 2rem;
+}
+
+.cardOneBottom {
+    background-color: #B6E2A2BF;
+    cursor: pointer;
+}
+.cardOneBottom:hover {
+    background-color: #b6e2a2;
+    cursor: pointer;
+}
+.cardSize {
+    height: 300px;
+}
+
+.cardTwoTop {
+    background-color: #00A1FF;
+    cursor: pointer;
+    color: white;
+    padding: 2rem;
+}
+
+.cardTwoBottom {
+    background-color: #4394b1b6;
+    cursor: pointer;
+}
+.cardTwoBottom:hover {
+    background-color: #4394b1;
+    cursor: pointer;
+}
+
+.cardThreeTop {
+    background-color: #B73EB7;
+    cursor: pointer;
+    color: white;
+    padding: 1rem;
+}
+
+.cardThreeBottom {
+    background-color: #E094E5C4;
+    cursor: pointer;
+}
+.cardThreeBottom:hover{
+    background-color: #e094e5;
+    cursor: pointer;
+}
+#background {
+    height: 100%!important;
+    background-image: url("./SideshowBob.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+.noPad {
+    padding: 0%;
+    height: 100%;
+}
+
+.removeBorder {
+    border: none;
+}
+
+
+.fas, .far {
+    margin-top: 2rem;
+}
+.zoom {
+
+    transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+    transform: scale(1.03); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
+}
+
+.btwn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.alertColor{
+    background-color: #E12B38;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.textColor{
+    color: white;
+    font-size: 35px;
+}
+.alertSizing{
+    height: 200px;
+    border-radius: 25px;
+}

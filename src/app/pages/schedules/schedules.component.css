@@ -1,0 +1,76 @@
+.navBG{
+    background-color: #0064A8;
+}
+img{
+    height: 114px;
+}
+.headerTitle{
+    display: flex;
+    justify-content: center;
+}
+.title{
+    margin-right: 80px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.seasonThree{
+    margin-top: 60px;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+.custom-select {
+    max-width: 150px;
+    border-color: rgb(161, 161, 161);
+    cursor: pointer;
+}
+.custom-select select {
+
+    -webkit-appearance: none;
+
+}
+
+.optionStyle{
+    font-size: 30px;
+    min-width: 100%;
+}
+
+.container{
+    min-width: 100%;
+    padding:0;
+}
+
+/********** COLUMN NAV*********/
+.titleBGFC{
+    background-color: #428C21
+}
+.titleBGS{
+    background-color: #00A1FF
+}
+.titleBGRTD{
+    background-color: #B73EB7
+}
+.font41{
+    font-size:35px;
+    color:white;
+}
+.font33{
+    font-size:30px;
+}
+
+
+.bodyBorder{
+    border-bottom: solid 1.5px #707070;
+}
+.extraMargin{
+    margin-top: 60px;
+}
+.navLinks:hover, .active{
+background-color: #E9E9E9;
+}
+.navLinks{
+    user-select: none;
+    cursor: pointer;
+}
+
+/********** COLUMN NAV*********/
