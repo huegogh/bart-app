@@ -11,8 +11,8 @@
         </div>
         <div class="col-2 headerTitle">
             <div class="container">
-                <select class=" rounded-0 custom-select optionStyle py-2" id="inputGroupSelect01">
-                    <option class="" *ngFor="let item of popArray">{{item}}</option>
+                <select name="manager" #FavList (change)="OnChange(FavList.value)"  class=" rounded-0 custom-select optionStyle py-2" id="inputGroupSelect01">
+                    <option class="" *ngFor="let item of Favorites">{{item}}</option>
                 </select>
             </div>
         </div>

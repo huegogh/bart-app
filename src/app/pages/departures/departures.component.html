@@ -7,7 +7,7 @@
             <div class="row mb-5">
                 <div class="col">
                     <div class="container">
-                        <select class=" rounded-0 custom-select optionStyle py-2" id="inputGroupSelect01">
+                        <select #dropList class=" rounded-0 custom-select optionStyle py-2" id="inputGroupSelect01">
                             <option class="" *ngFor="let item of popArray">{{item}}</option>
                         </select>
                     </div>
@@ -23,7 +23,7 @@
                     <th>
                         <div class="row">
                             <!--DELETE BEFORE MERGE: Star is here-->
-                            <div class="col"><i class="fas fa-star"></i>[[12th St. Oakland City Center]]</div>
+                            <div class="col"><i (click)="AddToFavoritesList(dropList.value)" class="fas fa-star"></i>[[12th St. Oakland City Center]]</div>
                             <div class="col rightAlign">[[1:19am]]</div>
                         </div>
                     </th>
