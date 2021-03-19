@@ -47,3 +47,38 @@ tr {
     min-width: 100%;
     padding:0;
 }
+
+/********** COLUMN NAV*********/
+.titleBGFC{
+    background-color: #428C21
+}
+.titleBGS{
+    background-color: #00A1FF
+}
+.titleBGRTD{
+    background-color: #B73EB7
+}
+.font41{
+    font-size:35px;
+    color:white;
+}
+.font33{
+    font-size:30px;
+}
+
+
+.bodyBorder{
+    border-bottom: solid 1.5px #707070;
+}
+.extraMargin{
+    margin-top: 60px;
+}
+.navLinks:hover, .active{
+background-color: #E9E9E9;
+}
+.navLinks{
+    user-select: none;
+    cursor: pointer;
+}
+
+/********** COLUMN NAV*********/
