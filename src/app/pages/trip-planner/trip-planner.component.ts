@@ -60,6 +60,7 @@ export class TripPlannerComponent implements OnInit {
     "West Dublin/Pleasanton",
     "West Oakland",
   ];
+  abbrArray:string[] = [];
 
   tripList: ITripsList[] = [];
   constructor() { }
@@ -67,8 +68,9 @@ export class TripPlannerComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  passStation(value: string){
-    console.log(value);
+  logMe(value1: string, value2: string){
+    console.log(value1);
+    console.log(value2);
   }
 
 }
