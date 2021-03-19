@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ApiService } from '../../services/api.service';
+import { ScheduleServicesService } from '../../services/schedule-services.service';
+
 
 @Component({
   selector: 'app-departures',
@@ -6,8 +9,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./departures.component.css']
 })
 export class DeparturesComponent implements OnInit {
+  testDepart = '';
+  departTime = '';
+  cityCalled:string = "";
+
   toggle = false;
   initialText = 'This is not working!';
+
   popArray:string[] = [
     "12th St. Oakland City Center",
     "16th St. Misson",
@@ -60,9 +68,39 @@ export class DeparturesComponent implements OnInit {
     "West Dublin/Pleasanton",
     "West Oakland",
   ];
-  constructor() { }
+  constructor(private apiService: ApiService) { }
+
+
+  passValue(station: string){
+    let passV: any = ScheduleServicesService.objectCities[station]
+    this.cityCalled = `http://api.bart.gov/api/sched.aspx?cmd=stnsched&orig=${passV}&key=MW9S-E7SL-26DU-VV8V&json=y`;
+    console.log(this.cityCalled);
+
+    // this.apiService.GetDepartInfo(this.cityCalled).subscribe(
+    //   data => {
+    //     console.log(data.root.station.name);
+    //     console.log(data.root.time);
+    //     //this.testDepart = data.root.station[0];
+    //     this.departTime = data.root.time;
+    //   }
+    // )
+
+
+    this.apiService.GetDepartInfo(this.cityCalled).subscribe({
+      next: data => {
+        console.log(data.root.station.name);
+        this.testDepart = data.root.station.name;
+      }
+    })
+  }
 
   ngOnInit(): void {
+    // this.apiService.GetDepartInfo().subscribe({
+    //   next: data => {
+    //     this.testDepart = data.root.station[0].name;
+    //     this.departTime = data.root.time;
+    //   }
+    // })
   }
 
 }

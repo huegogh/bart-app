@@ -8,24 +8,24 @@
             <div class="row mb-5">
                 <div class="col">
                     <div class="container">
-                        <select class=" rounded-0 custom-select optionStyle py-2" id="inputGroupSelect01">
-                            <option class="" *ngFor="let item of popArray">{{item}}</option>
+                        <select class=" rounded-0 custom-select optionStyle py-2" id="inputGroupSelect01" #departSelector>
+                            <option class=""  *ngFor="let item of popArray">{{item}}</option>
                         </select>
                     </div>
                 </div>
                 <div class="col">
-                    <app-button (click)="toggle = !toggle" buttonText="Select"></app-button>
+                    <app-button (click)="passValue(departSelector.value)" buttonText="Select"></app-button>
                 </div>
             </div>       
             <table class="table col-lg-10 pt-5">
 
-                <tbody *ngIf="toggle">
+            <table class="table pt-5">
+                <tbody>
                     <!-- use combo structural directive to display the contents of the table based on data being called in -->
                     <th>
                         <div class="row">
-                            <!--DELETE BEFORE MERGE: Star is here-->
-                            <div class="col"><i class="fas fa-star"></i>[[12th St. Oakland City Center]]</div>
-                            <div class="col rightAlign">[[1:19am]]</div>
+                            <div class="col"><i class="fas fa-star"></i>{{testDepart}}</div>
+                            <div class="col rightAlign">{{departTime}}</div>
                         </div>
                     </th>
 

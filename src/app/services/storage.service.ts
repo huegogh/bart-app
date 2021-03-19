@@ -1,6 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, OnInit } from '@angular/core';
-import { parse } from '@fortawesome/fontawesome-svg-core';
 import { Observable } from 'rxjs';
 
 
@@ -25,9 +24,9 @@ getFromLocalStorage(key: string){
   return localStorage.getItem(key) !== null ? this.GetString(key) : [''];
   
 }
- GetString(str: string){
-   return JSON.parse(localStorage.getItem(str)!);
- }
+GetString(str: string){
+  return JSON.parse(localStorage.getItem(str)!);
+}
 
 AddValue(entry: any):void {
   this.StrgValue.push(entry);

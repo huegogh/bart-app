@@ -50,7 +50,7 @@ export class ScheduleServicesService {
     //time=h:mm+am/pm
   }
 
-  private objectCities = {
+  static objectCities: any = {
     "12th St. Oakland City Center": "12TH",
     "16th St. Misson": "16TH",
     "19th St. Oakland": "19TH",
