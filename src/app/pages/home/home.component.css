@@ -77,7 +77,6 @@ img {
     background-color: #E094E5C4;
     cursor: pointer;
 }
-
 #background {
     height: 100%!important;
     background-image: url("./SideshowBob.png");
@@ -86,7 +85,6 @@ img {
     background-position: center;
    
 }
-
 .noPad {
     padding: 0%;
     height: 100%;
@@ -107,4 +105,18 @@ img {
 .zoom:hover {
     transform: scale(1.08); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 
+}
+.alertColor{
+    background-color: #E12B38;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.textColor{
+    color: white;
+    font-size: 35px;
+}
+.alertSizing{
+    height: 200px;
+    border-radius: 25px;
 }
