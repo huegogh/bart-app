@@ -78,20 +78,24 @@ img{
 
 /********** COLUMN NAV*********/
 .titleBGFC{
-    background-color: #428C21
+    background-color: #428C21;
+  
 }
 .titleBGS{
-    background-color: #00A1FF
+    background-color: #00A1FF;
+  
 }
 .titleBGRTD{
-    background-color: #B73EB7
+    background-color: #B73EB7;
+    
 }
+
 .font41{
     font-size:35px;
     color:white;
 }
 .font33{
-    font-size:33px;
+    font-size:30px;
 }
 
 
